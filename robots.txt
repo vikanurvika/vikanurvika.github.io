@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gadget.qd.je/sitemap.xml
+Sitemap: https://gadget.qd.je/sitemap.html

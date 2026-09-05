@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gadget World - Update your gadget knowledge here</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Update your gadget knowledge here.">
+    <meta name="author" content="scraface">
+	<meta name="yandex-verification" content="7c1a789c493380ef" />
+    <meta name="generator" content="Hugo 0.146.0">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <link rel="canonical" href="https://gadget.qd.je">
+    <meta name="theme-color" content="#2e2e33">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gadget World - Update your gadget knowledge here">
+    <meta property="og:description" content="Update your gadget knowledge here.">
+    <meta property="og:url" content="https://gadget.qd.je">
+    <meta property="og:site_name" content="Gadget World">
+    <meta property="og:image" content="https://gadget.qd.je/img/icon512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gadget World - Update your gadget knowledge here">
+    <meta name="twitter:description" content="Update your gadget knowledge here.">
+    <meta name="twitter:image" content="https://gadget.qd.je/img/icon512.png">
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="https://gadget.qd.je/css/style.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="https://gadget.qd.je/favicon-magazine.svg">
+    <link rel="shortcut icon" href="https://gadget.qd.je/favicon-magazine.svg">
+    <link rel="apple-touch-icon" href="https://gadget.qd.je/favicon-magazine.svg">
+    <link rel="manifest" href="https://gadget.qd.je/site.webmanifest">
+
+    <!-- Styles -->
+    <style>
+        /* Variables */
+        :root {
+            --theme: #fff;
+            --entry: #fff;
+            --primary: rgba(0, 0, 0, 0.88);
+            --secondary: rgba(0, 0, 0, 0.56);
+            --tertiary: rgba(0, 0, 0, 0.16);
+            --content: rgba(0, 0, 0, 0.88);
+            --hljs-bg: #1c1d21;
+            --code-bg: #f5f5f5;
+            --border: #eee;
+        }
+
+        [data-theme=dark] {
+            --theme: rgb(29, 30, 32);
+            --entry: rgb(46, 46, 51);
+            --primary: rgb(218, 218, 219);
+            --secondary: rgb(155, 156, 157);
+            --tertiary: rgb(65, 66, 68);
+            --content: rgb(196, 196, 197);
+            --hljs-bg: rgb(46, 46, 51);
+            --code-bg: rgb(55, 56, 62);
+            --border: rgb(51, 51, 51);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--primary);
+            background: var(--theme);
+            line-height: 1.6;
+        }
+
+        /* Layout with Sidebar */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .main-content {
+            min-width: 0;
+        }
+
+        /* Post Entry */
+        .post-entry {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: var(--entry);
+            border: 1px solid var(--border);
+            transition: transform .1s;
+            content-visibility: auto;
+            contain-intrinsic-size: 420px;
+        }
+
+        .post-entry:hover {
+            transform: scale(1.01);
+        }
+
+        .post-entry.has-thumb .entry-thumb {
+            margin-bottom: 12px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .post-entry.has-thumb .entry-thumb img {
+            display: block;
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .read-more-cta {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .post-entry:hover .read-more-cta {
+            color: var(--primary);
+        }
+
+        .entry-header {
+            margin-bottom: 15px;
+        }
+
+        .entry-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            line-height: 1.3;
+        }
+
+        .entry-header h2 a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .entry-header h2 a:hover {
+            color: var(--secondary);
+        }
+
+        .entry-content {
+            color: var(--content);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .entry-footer {
+            color: var(--secondary);
+            font-size: 14px;
+        }
+
+        .entry-link {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        /* Home Info */
+        .first-entry.home-info {
+            margin-bottom: 40px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .first-entry.home-info .entry-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .first-entry.home-info .entry-content {
+            font-size: 1.1rem;
+        }
+
+        .entry-description {
+            margin-top: 10px;
+            color: var(--secondary);
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+
+        .sidebar-widget {
+            background: var(--entry);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .sidebar-post-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-post-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-post-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .sidebar-post-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: block;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+
+        .sidebar-post-link:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .sidebar-post-link::before {
+            content: "📄";
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: var(--entry);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        #menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            margin-left: 20px;
+        }
+
+        #menu a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Theme Toggle */
+        .logo-switches {
+            margin-left: 15px;
+        }
+
+        #theme-toggle {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background: none;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        [data-theme=dark] #sun {
+            display: block;
+        }
+
+        [data-theme=dark] #moon {
+            display: none;
+        }
+
+        [data-theme=light] #sun {
+            display: none;
+        }
+
+        [data-theme=light] #moon {
+            display: block;
+        }
+
+        /* Pagination */
+        .page-footer {
+            margin-top: 40px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .pagination a {
+            padding: 10px 20px;
+            background: var(--entry);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .pagination a:hover {
+            background: var(--primary);
+            color: var(--entry);
+        }
+
+        /* Top Link */
+        .top-link {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--tertiary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .top-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            color: var(--secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                order: 2;
+            }
+
+            .main-content {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                padding: 15px;
+            }
+
+            #menu {
+                gap: 10px;
+                font-size: 14px;
+            }
+
+            #menu li {
+                margin-left: 10px;
+            }
+
+            .first-entry.home-info .entry-header h1 {
+                font-size: 2rem;
+            }
+
+            .sidebar-widget {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .first-entry.home-info {
+                padding: 20px;
+            }
+
+            .first-entry.home-info .entry-header h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* Loading Performance */
+        img {
+            content-visibility: auto;
+        }
+
+        /* PaperMod fix pack: balanced desktop + safe mobile */
+        body {
+            overflow-x: hidden;
+        }
+
+        .main {
+            max-width: 1240px;
+            padding: 24px;
+        }
+
+        .content-wrapper {
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+            gap: 28px;
+            align-items: start;
+        }
+
+        .main-content,
+        .sidebar,
+        .post-entry,
+        .sidebar-widget {
+            min-width: 0;
+        }
+
+        .post-entry,
+        .sidebar-widget,
+        .first-entry.home-info {
+            border-radius: 12px;
+        }
+
+        .entry-content p,
+        .sidebar-post-link {
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 1024px) {
+            .main {
+                padding: 18px;
+            }
+
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .sidebar {
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                padding: 14px;
+            }
+
+            .nav {
+                padding: 12px 14px;
+                gap: 10px;
+            }
+
+            #menu {
+                max-width: 100%;
+                overflow-x: auto;
+                white-space: nowrap;
+                gap: 8px;
+                padding-bottom: 2px;
+            }
+
+            .post-entry {
+                padding: 14px;
+                margin-bottom: 14px;
+            }
+
+            .entry-header h2 {
+                font-size: 1.15rem;
+            }
+        }
+
+        /* Homepage style like screenshot: magazine cards without sidebar */
+        body {
+            background: #eef2f7;
+        }
+
+        .main {
+            max-width: 1320px;
+            padding: 14px 14px 24px;
+        }
+
+        .home-titlebar {
+            margin: 4px 0 10px;
+            padding: 6px 2px 2px;
+            text-align: center;
+        }
+
+        .home-titlebar h1 {
+            font-size: clamp(1.6rem, 3.8vw, 2.15rem);
+            margin: 0;
+            line-height: 1.2;
+            color: #0f2548;
+            letter-spacing: 0.01em;
+        }
+
+        .home-top-ad {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .home-top-ad [data-lazy-ad] {
+            min-height: 0;
+        }
+
+        .post-entry.post-entry-ad {
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #dde3ec;
+        }
+
+        .home-top-ad iframe,
+        .home-top-ad img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content-wrapper {
+            grid-template-columns: 1fr;
+            margin-top: 0;
+            gap: 10px;
+        }
+
+        .sidebar {
+            display: none;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            align-items: stretch;
+        }
+
+        .post-entry {
+            margin: 0;
+            padding: 12px;
+            border-radius: 8px;
+            background: #fff;
+            border: 1px solid #dde3ec;
+            box-shadow: none;
+            contain: content;
+        }
+
+        .post-entry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 14px rgba(32, 56, 85, 0.1);
+        }
+
+        .post-entry.has-thumb .entry-thumb {
+            margin-bottom: 10px;
+        }
+
+        .post-entry.has-thumb .entry-thumb img {
+            height: 144px;
+            border-radius: 6px;
+            background: #f1f4f8;
+        }
+
+        .entry-header {
+            margin-bottom: 8px;
+        }
+
+        .entry-header h2 {
+            font-size: 1.02rem;
+            line-height: 1.35;
+        }
+
+        .entry-content p {
+            margin: 0;
+            color: #3b4a5b;
+            font-size: 0.9rem;
+            line-height: 1.55;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .entry-footer {
+            margin-top: 10px;
+            font-size: 0.76rem;
+            color: #7a8697;
+        }
+
+        .read-more-cta {
+            display: none;
+        }
+
+        .page-footer {
+            grid-column: 1 / -1;
+            margin-top: 8px;
+        }
+
+        .pagination {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pagination a {
+            background: transparent;
+            border: 0;
+            padding: 6px 4px;
+            border-radius: 0;
+            color: #1f4b8f;
+            font-weight: 500;
+        }
+
+        .pagination a:hover {
+            background: transparent;
+            color: #0b2959;
+            text-decoration: underline;
+        }
+
+        .nav {
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        #menu li {
+            margin-left: 14px;
+        }
+
+        .logo a {
+            font-size: 1.05rem;
+        }
+
+        /* Floating ad slot (custom HTML from script) */
+        .floating-ad {
+            position: fixed;
+            left: 50%;
+            bottom: 12px;
+            transform: translateX(-50%);
+            z-index: 9999;
+            width: min(300px, calc(100vw - 20px));
+            background: #fff;
+            border: 1px solid #ced8e6;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .floating-ad.hidden {
+            display: none;
+        }
+
+        .floating-ad-close {
+            position: absolute;
+            top: 2px;
+            right: 6px;
+            border: 0;
+            background: transparent;
+            font-size: 38px;
+            line-height: 1;
+            color: #222;
+            cursor: pointer;
+            padding: 0;
+            z-index: 2;
+        }
+
+        .floating-ad-content {
+            line-height: 0;
+        }
+
+        .floating-ad-content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .post-entry.has-thumb .entry-thumb img {
+                height: 190px;
+            }
+
+            .nav {
+                border-radius: 0;
+            }
+        }
+    </style>
+
+    <!-- NoScript Styles -->
+    <noscript>
+        <style>
+            #theme-toggle,
+            .top-link {
+                display: none;
+            }
+        </style>
+    </noscript>
+
+    <!-- Theme Script -->
+    <script>
+        if (localStorage.getItem("pref-theme") === "dark") {
+            document.querySelector("html").dataset.theme = 'dark';
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            document.querySelector("html").dataset.theme = 'light';
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.querySelector("html").dataset.theme = 'dark';
+        }
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Gadget World",
+        "url": "https://gadget.qd.je",
+        "description": "Update your gadget knowledge here.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gadget World",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://gadget.qd.je/img/icon512.png"
+            }
+        },
+        "dateModified": "2025-11-03T10:11:13Z"
+    }
+    </script>
+</head>
+
+<body class="list h-feed" id="top">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="/" accesskey="h" title="Gadget World" class="p-name u-url">
+                    Gadget World
+                </a>
+                <div class="logo-switches">
+                    <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                        <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="https://gadget.qd.je/page/dmca.html" title="DMCA">
+                        <span>DMCA</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gadget.qd.je/page/contact.html" title="Contact">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gadget.qd.je/page/privacy.html" title="Privacy Policy">
+                        <span>Privacy Policy</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<script src="https://pub.informacion.my.id/pub.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5015759,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5015759&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+    <!-- Main Content -->
+    <main class="main">
+        <section class="home-titlebar" aria-label="Homepage Title">
+            <h1>Gadget World</h1>
+        </section>
+
+        <!-- Content with Sidebar -->
+        <div class="content-wrapper">
+            <!-- Main Posts List -->
+            <div class="main-content">
+                
+                                    
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/who-makes-the-best-aaa-5eje.html" class="u-url">
+                                        <img loading="eager"
+                                             src="https://ts3.mm.bing.net/th?id=OIP.f1vOJk5R4E3iHMV_BPWiWwHaH1&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="who makes the best aaa battery"
+                                             title="who makes the best aaa battery"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                             fetchpriority="high" >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/who-makes-the-best-aaa-5eje.html" class="u-url">who makes the best aaa battery</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>The Verge: The only USB-C AA battery I’d buy for myself is the Zepath 3600 The only USB-C AA battery I’d buy for myself is the Zepath 3600 The...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to who makes the best aaa battery"
+                                href="https://gadget.qd.je/gadget/who-makes-the-best-aaa-5eje.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/hp-spectre-x360-laptop-specifications-d3pa.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts1.mm.bing.net/th?id=OIP.8-SRXhEpEPrZxzuHkJa85gHaE8&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="hp spectre x360 laptop specifications"
+                                             title="hp spectre x360 laptop specifications"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/hp-spectre-x360-laptop-specifications-d3pa.html" class="u-url">hp spectre x360 laptop specifications</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>Digit: HP Spectre x360 13-aw0188TU Laptop (10th Gen Core i7/16GB/ 1TB SSD/ Win10 Pro) HP Spectre x360 13-aw0188TU Laptop (10th Gen Core i7/16GB/...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to hp spectre x360 laptop specifications"
+                                href="https://gadget.qd.je/gadget/hp-spectre-x360-laptop-specifications-d3pa.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/smartwatches-and-fitness-trackers-cogn.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts2.mm.bing.net/th?id=OIP.jxD_in6_to_CKvJLI41lmwHaEk&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="smartwatches and fitness trackers"
+                                             title="smartwatches and fitness trackers"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/smartwatches-and-fitness-trackers-cogn.html" class="u-url">smartwatches and fitness trackers</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>Yahoo: The best fitness trackers 2025: Smartwatches and rings that you can buy during Amazon Prime Day The best fitness trackers 2025: Smartwatches...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to smartwatches and fitness trackers"
+                                href="https://gadget.qd.je/gadget/smartwatches-and-fitness-trackers-cogn.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/canon-28mm-f-1-8-qpmp.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts3.mm.bing.net/th?id=OIP.fD7A7o4MGsJeGvRYAKmQHAHaLH&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="canon 28mm f 1.8"
+                                             title="canon 28mm f 1.8"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/canon-28mm-f-1-8-qpmp.html" class="u-url">canon 28mm f 1.8</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>The Canon RF 28mm f/2.8 STM is Canon&#039;s first ever pancake lens for the RF mount – and it&#039;s also the smallest ever RF mount lens. However, there&#039;s...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to canon 28mm f 1.8"
+                                href="https://gadget.qd.je/gadget/canon-28mm-f-1-8-qpmp.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/canon-lens-28-300mm-66wf.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts4.mm.bing.net/th?id=OIP.5b2IWdO-6tDpVBvKgfMwygHaEK&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="canon lens 28 300mm"
+                                             title="canon lens 28 300mm"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/canon-lens-28-300mm-66wf.html" class="u-url">canon lens 28 300mm</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>Today, Canon announced the launch of the Canon RF100-300mm F2.8 L IS USM lens, a modern 300mm f/2.8 equivalent lens. The Canon RF100-300mm F2.8L IS...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to canon lens 28 300mm"
+                                href="https://gadget.qd.je/gadget/canon-lens-28-300mm-66wf.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/usb-3-1-flash-drive-763p.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts2.mm.bing.net/th?id=OIP.1Wjnkj3I8LKV1xDpy73URgHaHa&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="usb 3.1 flash drive"
+                                             title="usb 3.1 flash drive"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/usb-3-1-flash-drive-763p.html" class="u-url">usb 3.1 flash drive</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>USB drives and SD cards typically last around 10 years, but flash memory wear, P/E cycles, heat, and data retention all affect lifespan. MSN: Best...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to usb 3.1 flash drive"
+                                href="https://gadget.qd.je/gadget/usb-3-1-flash-drive-763p.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/how-old-life-on-earth-6lc9.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts3.mm.bing.net/th?id=OIP.ac0Rjd53kEnySBGQDMKv-AHaKg&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="how old life on earth"
+                                             title="how old life on earth"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/how-old-life-on-earth-6lc9.html" class="u-url">how old life on earth</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>Yahoo: All Life on Earth Comes From One Single Ancestor. And It&#039;s So Much Older Than We Thought. &quot;Hearst Magazines and Yahoo may earn commission or...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to how old life on earth"
+                                href="https://gadget.qd.je/gadget/how-old-life-on-earth-6lc9.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/xiaomi-camera-phone-13f2.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts2.mm.bing.net/th?id=OIP.mF9FRf6E2NZx6-84NKM4TQHaE8&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="xiaomi camera phone"
+                                             title="xiaomi camera phone"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/xiaomi-camera-phone-13f2.html" class="u-url">xiaomi camera phone</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>AOL: I&#039;ve Finally Got My Dream Camera Phone: Xiaomi&#039;s Leica Leitzphone Review The Xiaomi Leica Leitzphone is the best, most exciting camera phone I...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to xiaomi camera phone"
+                                href="https://gadget.qd.je/gadget/xiaomi-camera-phone-13f2.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/ipad-pro-black-friday-deals-cwu0.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts4.mm.bing.net/th?id=OIP.N3u2F_woYu1mGp9OTNgEaAHah-&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="ipad pro black friday deals costco"
+                                             title="ipad pro black friday deals costco"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/ipad-pro-black-friday-deals-cwu0.html" class="u-url">ipad pro black friday deals costco</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>Even Apple runs its own Black Friday shopping event, where it offers gift cards on certain purchases, including $50 with AirPods Pro 3, $100 for...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to ipad pro black friday deals costco"
+                                href="https://gadget.qd.je/gadget/ipad-pro-black-friday-deals-cwu0.html"></a>
+                        </article>
+
+                                                                                
+                                                                    <article class="post-entry h-entry has-thumb">
+                                                            <div class="entry-thumb">
+                                    <a href="https://gadget.qd.je/gadget/open-airdrop-mac-2wmw.html" class="u-url">
+                                        <img loading="lazy"
+                                             src="https://ts1.mm.bing.net/th?id=OIP.PhRmFPRmJ_jEzSA6spMymwHaFg&amp;pid=15.1"
+                                             class="u-photo"
+                                             alt="open airdrop mac"
+                                             title="open airdrop mac"
+                                             width="640"
+                                             height="360"
+                                             decoding="async"
+                                            >
+                                    </a>
+                                </div>
+                                                        <header class="entry-header">
+                                <h2 class="entry-hint-parent p-name">
+                                    <a href="https://gadget.qd.je/gadget/open-airdrop-mac-2wmw.html" class="u-url">open airdrop mac</a>
+                                </h2>
+                            </header>
+                            <div class="entry-content e-content">
+                                <p>XDA Developers on MSN: This open-source app replaced AirDrop across every device I own, and it works on any OS AirDrop used to make non-iPhone...</p>
+                                <span class="read-more-cta">Read more →</span>
+                            </div>
+                            <footer class="entry-footer">
+                                <time class="dt-published" datetime="2026-05-13T08:06:23+00:00" title="May 13, 2026">May 13, 2026</time>
+                            </footer>
+                            <a class="entry-link" aria-label="post link to open airdrop mac"
+                                href="https://gadget.qd.je/gadget/open-airdrop-mac-2wmw.html"></a>
+                        </article>
+
+                                                            
+                <!-- Pagination -->
+                <footer class="page-footer">
+                    <nav class="pagination">
+                                            </nav>
+                </footer>
+            </div>
+
+        </div>
+    </main>
+
+        
+    <!-- Footer -->
+    <footer class="footer">
+        <span class="h-card">&copy; 2026 <a href="https://gadget.qd.je" class="p-name u-url">Gadget World</a></span>
+        <span>&nbsp;·&nbsp;</span>
+        <a href="https://gadget.qd.je/sitemap.xml" rel="nofollow">Sitemap</a>
+        <span>&nbsp;·&nbsp;</span>
+        <span>Powered by Hugo</span>
+    </footer>
+
+    <!-- Top Link -->
+    <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </a>
+
+    <!-- Floating Ad (Custom HTML slot, no cookie/localStorage logic) -->
+    <div id="floating-ad" class="floating-ad hidden" aria-label="Floating Advertisement">
+        <button id="floating-ad-close" class="floating-ad-close" aria-label="Close advertisement">&times;</button>
+        <div id="floating-ad-content" class="floating-ad-content"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function decodeBase64(value) {
+            try {
+                return window.atob(value || '');
+            } catch (e) {
+                return '';
+            }
+        }
+
+        function mountHtml(target, html) {
+            if (!target || !html || target.dataset.mounted === '1') {
+                return;
+            }
+
+            target.dataset.mounted = '1';
+            const template = document.createElement('template');
+            template.innerHTML = html;
+            const fragment = template.content.cloneNode(true);
+            const scripts = Array.from(fragment.querySelectorAll('script'));
+
+            scripts.forEach((oldScript) => {
+                const newScript = document.createElement('script');
+                Array.from(oldScript.attributes).forEach((attr) => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+                newScript.text = oldScript.text || oldScript.textContent || '';
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
+
+            target.innerHTML = '';
+            target.appendChild(fragment);
+        }
+
+        function initLazyAdSlots() {
+            const adSlots = Array.from(document.querySelectorAll('[data-lazy-ad][data-ad-html]'));
+            if ('IntersectionObserver' in window && adSlots.length > 0) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) {
+                            return;
+                        }
+
+                        const node = entry.target;
+                        mountHtml(node, decodeBase64(node.dataset.adHtml || ''));
+                        observer.unobserve(node);
+                    });
+                }, { rootMargin: '350px 0px' });
+
+                adSlots.forEach((slot) => observer.observe(slot));
+            } else {
+                adSlots.forEach((slot) => mountHtml(slot, decodeBase64(slot.dataset.adHtml || '')));
+            }
+        }
+
+        // Menu scroll position
+        let menu = document.getElementById('menu');
+        if (menu) {
+            const scrollPosition = localStorage.getItem("menu-scroll-position");
+            if (scrollPosition) {
+                menu.scrollLeft = parseInt(scrollPosition, 10);
+            }
+
+            menu.onscroll = function() {
+                localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+            }
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                var id = this.getAttribute("href").substr(1);
+                if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    document.querySelector(`[id='${decodeURIComponent(id)}']`)?.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                } else {
+                    document.querySelector(`[id='${decodeURIComponent(id)}']`)?.scrollIntoView();
+                }
+                if (id === "top") {
+                    history.replaceState(null, null, " ");
+                } else {
+                    history.pushState(null, null, `#${id}`);
+                }
+            });
+        });
+
+        // Top link visibility (passive + rAF)
+        const mybutton = document.getElementById("top-link");
+        let scrollTicking = false;
+        const handleTopLinkVisibility = () => {
+            const y = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            if (y > 800) {
+                mybutton.style.visibility = "visible";
+                mybutton.style.opacity = "1";
+            } else {
+                mybutton.style.visibility = "hidden";
+                mybutton.style.opacity = "0";
+            }
+            scrollTicking = false;
+        };
+        window.addEventListener('scroll', () => {
+            if (!scrollTicking) {
+                scrollTicking = true;
+                window.requestAnimationFrame(handleTopLinkVisibility);
+            }
+        }, { passive: true });
+
+        // Theme toggle
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            const html = document.querySelector("html");
+            if (html.dataset.theme === "dark") {
+                html.dataset.theme = 'light';
+                localStorage.setItem("pref-theme", 'light');
+            } else {
+                html.dataset.theme = 'dark';
+                localStorage.setItem("pref-theme", 'dark');
+            }
+        });
+
+        // Floating ad HTML is loaded from storage/app/ads/floating.html
+        const CUSTOM_AD_HTML = "";
+
+        const adWrap = document.getElementById('floating-ad');
+        const adContent = document.getElementById('floating-ad-content');
+        const adClose = document.getElementById('floating-ad-close');
+
+        function injectFloatingAdHtml(container, html) {
+            container.innerHTML = '';
+
+            const template = document.createElement('template');
+            template.innerHTML = html;
+            const fragment = template.content.cloneNode(true);
+            const scripts = Array.from(fragment.querySelectorAll('script'));
+
+            scripts.forEach((oldScript) => {
+                const newScript = document.createElement('script');
+                Array.from(oldScript.attributes).forEach((attr) => {
+                    newScript.setAttribute(attr.name, attr.value);
+                });
+                newScript.text = oldScript.text || oldScript.textContent || '';
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
+
+            container.appendChild(fragment);
+        }
+
+        function renderFloatingAd(container, html) {
+            const hasScript = /<script[\s>]/i.test(html);
+            if (!hasScript) {
+                injectFloatingAdHtml(container, html);
+                return;
+            }
+
+            const frame = document.createElement('iframe');
+            frame.width = '300';
+            frame.height = '250';
+            frame.setAttribute('scrolling', 'no');
+            frame.setAttribute('frameborder', '0');
+            frame.style.border = '0';
+            frame.style.width = '300px';
+            frame.style.height = '250px';
+            frame.style.display = 'block';
+            frame.style.margin = '0 auto';
+            container.innerHTML = '';
+            container.appendChild(frame);
+
+            const doc = frame.contentWindow && frame.contentWindow.document;
+            if (!doc) {
+                return;
+            }
+
+            doc.open();
+            doc.write('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;padding:0;overflow:hidden;">' + html + '</body></html>');
+            doc.close();
+        }
+
+        const adHtml = (typeof CUSTOM_AD_HTML === 'string') ? CUSTOM_AD_HTML.trim() : '';
+
+        if (adWrap && adContent && adHtml !== '') {
+            renderFloatingAd(adContent, adHtml);
+            window.setTimeout(() => {
+                adWrap.classList.remove('hidden');
+            }, 2200);
+        }
+
+        if (adClose && adWrap) {
+            adClose.addEventListener('click', () => {
+                adWrap.classList.add('hidden');
+            });
+        }
+
+        // Social bar ad HTML is loaded from storage/app/ads/sosbar.html
+        const SOSBAR_AD_HTML = "";
+
+        function injectHtmlScripts(target, html) {
+            const tpl = document.createElement('template');
+            tpl.innerHTML = html;
+            const nodes = Array.from(tpl.content.childNodes);
+
+            nodes.forEach((node) => {
+                if (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'SCRIPT') {
+                    const s = document.createElement('script');
+                    Array.from(node.attributes).forEach((attr) => s.setAttribute(attr.name, attr.value));
+                    s.text = node.text || node.textContent || '';
+                    target.appendChild(s);
+                } else {
+                    target.appendChild(node.cloneNode(true));
+                }
+            });
+        }
+
+        const sosbarHtml = (typeof SOSBAR_AD_HTML === 'string') ? SOSBAR_AD_HTML.trim() : '';
+
+        if (sosbarHtml !== '') {
+            const holder = document.createElement('div');
+            holder.setAttribute('data-ad-slot', 'sosbar');
+            holder.style.display = 'contents';
+            document.body.appendChild(holder);
+            injectHtmlScripts(holder, sosbarHtml);
+        }
+
+        initLazyAdSlots();
+    </script>
+
+                <div id="js-tracker-slot" data-tracker-html="PCEtLSBEZWZhdWx0IFN0YXRjb3VudGVyIGNvZGUgZm9yIHN0YWdpbmcuZnJhbnUuZWR1LzI4amFuDQpodHRwczovL3N0YWdpbmcuZnJhbnUuZWR1LyAtLT4NCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCnZhciBzY19wcm9qZWN0PTEzMjAxNzE0OyANCnZhciBzY19pbnZpc2libGU9MTsgDQp2YXIgc2Nfc2VjdXJpdHk9Ijk5MmNmNTRiIjsgDQo8L3NjcmlwdD4NCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ig0Kc3JjPSJodHRwczovL3d3dy5zdGF0Y291bnRlci5jb20vY291bnRlci9jb3VudGVyLmpzIg0KYXN5bmM+PC9zY3JpcHQ+DQo8bm9zY3JpcHQ+PGRpdiBjbGFzcz0ic3RhdGNvdW50ZXIiPjxhIHRpdGxlPSJXZWIgQW5hbHl0aWNzIg0KaHJlZj0iaHR0cHM6Ly9zdGF0Y291bnRlci5jb20vIiB0YXJnZXQ9Il9ibGFuayI+PGltZw0KY2xhc3M9InN0YXRjb3VudGVyIg0Kc3JjPSJodHRwczovL2Muc3RhdGNvdW50ZXIuY29tLzEzMjAxNzE0LzAvOTkyY2Y1NGIvMS8iDQphbHQ9IldlYiBBbmFseXRpY3MiDQpyZWZlcnJlclBvbGljeT0ibm8tcmVmZXJyZXItd2hlbi1kb3duZ3JhZGUiPjwvYT48L2Rpdj48L25vc2NyaXB0Pg0KPCEtLSBFbmQgb2YgU3RhdGNvdW50ZXIgQ29kZSAtLT4="></div>
+        <script>
+            (function() {
+                const trackerNode = document.getElementById('js-tracker-slot');
+                if (!trackerNode) {
+                    return;
+                }
+
+                const runTracker = function() {
+                    mountHtml(trackerNode, decodeBase64(trackerNode.dataset.trackerHtml || ''));
+                };
+
+                if ('requestIdleCallback' in window) {
+                    window.requestIdleCallback(runTracker, { timeout: 2000 });
+                } else {
+                    window.setTimeout(runTracker, 1200);
+                }
+            })();
+        </script>
+    
+
+</body>
+</html>
